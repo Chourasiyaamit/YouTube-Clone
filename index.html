@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <title>YouTube</title> <!-- This sets the browser tab title -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="sidebar-hidden">
+    <div class="container">
+        <!-- Navbar -->
+        <header>
+            <nav class="navbar">
+                <!-- nav-left -->
+                <div class="nav-section nav-left">
+                    <button class="nav-button menu-button">
+                        <i class="fa-solid fa-bars"></i></button>
+                    <a href="#" class="nav-logo">
+                        <img src="assets/logo.png" alt="logo" class="logo-image">
+                        <h2 class="logo-text">Permium</h2>
+                    </a>
+                </div>
+                <!-- nav-center -->
+                <div class="nav-section nav-center">
+                    <form action="#" class="search-form">
+                        <input type="search" class="search-input" placeholder="search" required>
+                        <button class="nav-button search-button">
+                            <i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <button class="nav-button mic-button">
+                        <i class="fa-solid fa-microphone"></i></button>
+                </div>
+                <!-- nav-right -->
+                <div class="nav-section nav-right">
+                     <button class="nav-button search-button">
+                            <i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="nav-button theme-button">
+                        <i class="fa-solid fa-moon"></i></button>
+                    <button class="nav-button plus-button">
+                        <i class="fa-solid fa-plus">
+                        </i>
+                    </button>
+                    <button class="nav-button bell-button">
+                        <i class="fa-solid fa-bell"></i></button>
+                    <img src="assets/user.webp" alt="user-image" class="user-image">
+                </div>
+            </nav>
+        </header>
+
+        <main class="main-layout">
+            <div class="screen-overlay"></div>
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="nav-section nav-left">
+                    <button class="nav-button menu-button">
+                        <i class="fa-solid fa-bars"></i></button>
+                    <a href="#" class="nav-logo">
+                        <img src="assets/logo.jpg" alt="logo" class="logo-image">
+                        <h2 class="logo-text">Permium</h2>
+                    </a>
+                </div>
+                <div class="link-container">
+                    <div class="link-section">
+                        <a href="#" class="link-item">
+                            <i class="fa-solid fa-house"></i>Home
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="fa-solid fa-video"></i>Shorts
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="fa-solid fa-photo-film"></i>Subscription
+                        </a>
+                    </div>
+                    <div class="section-separator"></div>
+
+                    <div class="link-section">
+                        <h4 class="section-title">You</h4>
+                        <a href="#" class="link-item">
+                            <i class="fa-solid fa-user"></i>Your Channel
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="fa-solid fa-clock-rotate-left"></i>History
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="fa-solid fa-clock"></i>Watch later
+                        </a>
+                    </div>
+                    <div class="section-separator"></div>
+
+                    <div class="link-section">
+                        <h4 class="section-title">Explore</h4>
+                        <a href="#" class="link-item">
+                            <i class="fa-solid fa-fire-flame-curved"></i>Trending
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="fa-solid fa-music"></i>Music
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="fa-solid fa-gamepad"></i>Gaming
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="fa-solid fa-trophy"></i>Sports
+                        </a>
+                    </div>
+                    <div class="section-separator"></div>
+
+                    <div class="link-section">
+                        <h4 class="section-title">More from YouTube</h4>
+                        <a href="#" class="link-item">
+                            <i class="fa-brands fa-youtube"></i>YouTube Premiun
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="fa-solid fa-music"></i>YouTube Music
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="fa-solid fa-child"></i>YouTube Kids
+                        </a>
+                    </div>
+                    <div class="section-separator"></div>
+
+                    <div class="link-section">
+                        <a href="#" class="link-item">
+                            <i class="fa-solid fa-gear"></i>Setting
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="fa-solid fa-flag"></i>Flag
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="fa-solid fa-circle-info"></i>Help
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="fa-solid fa-comment"></i>Feedback
+                        </a>
+                    </div>
+
+                </div>
+            </aside>
+
+            <div class="content-wrapper">
+                <!-- Category List -->
+                <div class="category-list">
+                    <button class="category-button active">All</button>
+                    <button class="category-button">News</button>
+                    <button class="category-button">Music</button>
+                    <button class="category-button">Disha Vakin</button>
+                    <button class="category-button">Gaming</button>
+                    <button class="category-button">Fortification</button>
+                    <button class="category-button">Hiking</button>
+                    <button class="category-button">Mixes</button>
+                    <button class="category-button">Ariplanes</button>
+                    <button class="category-button">Sketch Comedy</button>
+                    <button class="category-button">Batter</button>
+                    <button class="category-button">Cricket</button>
+                    <button class="category-button">Tamil</button>
+                    <button class="category-button">Bikes</button>
+                    <button class="category-button">Life Simulation Games</button>
+                    <button class="category-button">Indian Music</button>
+                    <button class="category-button">Bodybulding</button>
+                    <button class="category-button">Recenlty Uploaded</button>
+                    <button class="category-button">Watched</button>
+                    <button class="category-button">New to you</button>
+                </div>
+
+                <!-- Video List -->
+                <div class="video-list">
+
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://i.ytimg.com/vi/hVvAkPbJwnw/maxresdefault.jpg" alt="thumbnail"
+                                class="thumbnail">
+                            <p class="duration">17:03</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://tse2.mm.bing.net/th?id=OIP.ghTMdVPb7KAe7Q-OLe6ozgHaHa&pid=Api&P=0&h=220"
+                                alt="channel-logo" class="icon">
+                            <div class="vedio-detail">
+                                <h2 class="title">Dark Reality of Indian Education System | Dhruv Rathee</h2>
+                                <p class="channel-name">Dhruv Rathee</p>
+                                <p class="viewa">9.9M views 2 years ago</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img
+                                src="https://i.ytimg.com/vi/oTg44ie81tw/maxresdefault.jpg">
+                            <p class="duration">13:33</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://th.bing.com/th/id/OIP.ZninZld9x0ECXxS9sTuGMQHaHa?w=178&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+                                alt="channel-logo" class="icon">
+                            <div class="vedio-detail">
+                                <h2 class="title">Mr.INDIAN HACKER</h2>
+                                <p class="channel-name">Mr.INDIAN HACKER</p>
+                                <p class="viewa">5.1M views 1 Day ago</p>
+                            </div>
+                        </div>
+                    </a> -->
+
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://i.ytimg.com/vi/388x_QnvY_Q/maxresdefault.jpg" alt="thumbnail"
+                                class="thumbnail">
+                            <p class="duration">17:03</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://i0.wp.com/jnyhnews.com/wp-content/uploads/2022/09/%D9%85%D9%86-%D9%87%D9%88-%D8%B3%D8%A8%D9%8A%D8%AF.webp"
+                                alt="channel-logo" class="icon">
+                            <div class="vedio-detail">
+                                <h2 class="title">IShowSpeed RAGE/FUNNY MOMENTS! 😡😂 Ft Adin Ross, Souljia Boy, Teanna
+                                    Trump, DDG</h2>
+                                <p class="channel-name">Live Speedy</p>
+                                <p class="viewa">666k views 3 years ago</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://i.ytimg.com/vi/GkfBpm6MN9A/maxresdefault.jpg" alt="thumbnail"
+                                class="thumbnail">
+                            <p class="duration">15:27</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://tse4.mm.bing.net/th?id=OIP.oAsJ72nO1_-0iHlGZsN5TAHaHa&pid=Api&P=0&h=220"
+                                alt="channel-logo" class="icon">
+                            <div class="vedio-detail">
+                                <h2 class="title">Snake Water Gun Game in Python - Exercise 5 - Solution | Python
+                                    Tutorial - Day #63</h2>
+                                <p class="channel-name">CodeWithHarry</p>
+                                <p class="viewa">
+                                    140K views 2 years ago</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://i.ytimg.com/vi/NybvIU_Ft9o/maxresdefault.jpg" alt="thumbnail"
+                                class="thumbnail">
+                            <p class="duration">1:45:03</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.mTQiGO1C2nRW3lJXHK_V8AHaHa&pid=Api&P=0&h=220"
+                                alt="channel-logo" class="icon">
+                            <div class="vedio-detail">
+                                <h2 class="title">GAMING IN INDIA - GTA, Football, Esports, Other Games And India's
+                                    Bright Future | Scout On TRS</h2>
+                                <p class="channel-name">Ranveer Allahbadia</p>
+                                <p class="viewa">2.8M views 1 year ago</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://i.ytimg.com/vi/mlaIuBb6MPU/maxresdefault.jpg" alt="thumbnail"
+                                class="thumbnail">
+                            <p class="duration">17:00</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://tse2.mm.bing.net/th?id=OIP.5V4yTfF3ZTmgtbvGqv5oUAHaHa&pid=Api&P=0&h=220"
+                                alt="channel-logo" class="icon">
+                            <div class="vedio-detail">
+                                <h2 class="title">Ishowspeed INDIA Tour | Purav Jha</h2>
+                                <p class="channel-name">Purav Jha</p>
+                                <p class="viewa">
+                                    6.5M views 1 year ago</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://i.ytimg.com/vi/TWSCCmFQteY/maxresdefault.jpg" alt="thumbnail"
+                                class="thumbnail">
+                            <p class="duration">22:50</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://tse3.mm.bing.net/th?id=OIP.1isYlXvFjEOnv-C68-nMEAHaHa&pid=Api&P=0&h=220"
+                                alt="channel-logo" class="icon">
+                            <div class="vedio-detail">
+                                <h2 class="title">Meet Khan Sir | Episode 29</h2>
+                                <p class="channel-name">Sandeep Maheswari</p>
+                                <p class="viewa">25M views 2 years ago</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://tse1.mm.bing.net/th?id=OIF.Wc9DaOJm%2bd%2b6rfcehyaiVg&pid=Api&P=0&h=220"
+                                alt="thumbnail" class="thumbnail">
+                            <p class="duration">3:03</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://tse4.mm.bing.net/th?id=OIP.icYW4pgHXll1U_4ydmbg2gHaE7&pid=Api&P=0&h=220"
+                                alt="channel-logo" class="icon">
+                            <div class="vedio-detail">
+                                <h2 class="title">Ed Sheeran - Sapphire (Official Music Video)</h2>
+                                <p class="channel-name">Ed Sheeran</p>
+                                <p class="viewa">40,357,891 views 10 days ago</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://i.ytimg.com/vi/iFTAyaVipoM/maxresdefault.jpg" alt="thumbnail"
+                                class="thumbnail">
+                            <p class="duration">1:76</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://tse3.mm.bing.net/th?id=OIP.T8u8us429B3WXLkgB58OSwHaHa&pid=Api&P=0&h=220"
+                                alt="channel-logo" class="icon">
+                            <div class="vedio-detail">
+                                <h2 class="title">Squid Game: Season 2 | Official Trailer | Netflix</h2>
+                                <p class="channel-name">Netflix</p>
+                                <p class="viewa">17M views 2 months ago</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://tse2.mm.bing.net/th?id=OIP.rAHmwMMU9JRDyRu-VVUIqQHaEK&pid=Api&P=0&h=220"
+                                alt="thumbnail" class="thumbnail">
+                            <p class="duration">9:41</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://tse4.mm.bing.net/th?id=OIP.Yb1SticJkf9rtQ14L3xbHgHaHa&pid=Api&P=0&h=220"
+                                alt="channel-logo" class="icon">
+                            <div class="vedio-detail">
+                                <h2 class="title">Shree Hanuman Chalisa Original Video |🙏🌺| GULSHAN KUMAR | HARIHARAN
+                                    |Full HD</h2>
+                                <p class="channel-name">T-Series Bhakti Sagar</p>
+                                <p class="viewa">
+                                    4,669,417,073 views 14 years ago </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://tse4.mm.bing.net/th?id=OIP.p9XQIHWiv7TXuKaKr_AQjwHaEK&pid=Api&P=0&h=220"
+                                alt="thumbnail" class="thumbnail">
+                            <p class="duration">10:44</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.X3_99kvff79S0VegrKDXjwHaHa&pid=Api&P=0&h=220"
+                                alt="channel-logo" class="icon">
+                            <div class="vedio-detail">
+                                <h2 class="title">Air India 171 Was it Pilots Fault ? Flaps vs Gear Controversy</h2>
+                                <p class="channel-name">Flying Beast</p>
+                                <p class="viewa">
+                                    1,322,685 views 17 hours ago</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://i.ytimg.com/vi/rE8749CZQdA/maxresdefault.jpg" alt="thumbnail"
+                                class="thumbnail">
+                            <p class="duration">12:20</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://tse3.mm.bing.net/th?id=OIP.0VR02FYv8kKwUIb_5NmAOgHaHa&pid=Api&P=0&h=220"
+                                alt="channel-logo" class="icon">
+                            <div class="vedio-detail">
+                                <h2 class="title">ISRO Launches Chandrayaan 3 | Full Story Behind India's Biggest Space
+                                    Mission</h2>
+                                <p class="channel-name">GetsetflySCIENCE by Gaurav Thakur</p>
+                                <p class="viewa">
+                                    3.4M views 1 year ago</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://i.ytimg.com/vi/E3oG313_kps/maxresdefault.jpg" alt="thumbnail"
+                                class="thumbnail">
+                            <p class="duration">17:03</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://tse3.mm.bing.net/th?id=OIP.x0APmT13A_CsQhWh7xW3-gHaEs&pid=Api&P=0&h=220"
+                                alt="channel-logo" class="icon">
+                            <div class="vedio-detail">
+                                <h2 class="title">Khan Sir Podcast: India vs China, Pakistan, Bihar’s Reality &
+                                    Geopolitics | FO343 Raj Shamani</h2>
+                                <p class="channel-name">Raj Shamani</p>
+                                <p class="viewa">
+                                    18M views 1 month ago</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://i.ytimg.com/vi/RICdX9SBwvA/maxresdefault.jpg" alt="thumbnail"
+                                class="thumbnail">
+                            <p class="duration">1:37:38</p>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.neLvoCX-zPPLJcZV3Zrn3gAAAA&pid=Api&P=0&h=220"
+                                alt="channel-logo" class="icon">
+                            <div class="vedio-detail">
+                                <h2 class="title">I Travelled India 🇮🇳 for 100 Days straight | 100 Days of Dreaming
+                                    (Compilation) | Monkey Magic</h2>
+                                <p class="channel-name">Monkey Magic</p>
+                                <p class="viewa">1.3M views 1 years ago</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
