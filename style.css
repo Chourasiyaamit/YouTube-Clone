@@ -180,6 +180,7 @@ header,
     color: var(--black-color);                /**/
     white-space: nowrap;
     background-color: var(--light-grey-color);
+    transition: 0.2s ease;
 }
 
 .category-list .category-button.active {
@@ -267,6 +268,7 @@ header,
     width: 280px;
     padding: 0 0.7rem 0;
     background: var(--white-color);
+    transition: 0.3s;
 }
 
 /* sidebar button workking from JavaScript*/
